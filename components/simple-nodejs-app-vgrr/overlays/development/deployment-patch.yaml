@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-vgrr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-bioz-tenant/nodejs-users/simple-nodejs-app-vgrr@sha256:1d8f05179b9b9d2ba3f45ee8d23b06674cdaedb495cd7fb0966459c6a56fae48
+        name: my-nodejs
+        resources: {}
+status: {}
